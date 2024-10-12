@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKSHALA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> -->
+    <link rel="icon" href="logo.png">
+    <style>
+        .align-self-end{
+            margin-left: 200px;
+            /* width: 320px; */
+            /* flex-basis: 300px; */
+        }
+        body{
+            background-color: bisque;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: url(Elevate\ Your\ Reading\ Experience\ Certified\ by\ the\ Best!.png) ;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            height: 0%;
+            width: 100%;
+            
+            /* position: fixed;
+            top: 0;
+            left: 0; */
+            /* width: 50%; */
+            z-index: -1;
+            
+        }
+        /* body background-image{
+            height: 50%;
+        } */
+        /* body backgroung-img{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 50%;
+        } */
+        
+        .container{
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+        .card{
+            margin: 70px 23px;
+            padding: 23px 12px;
+            background-color: lavender;
+            display: flex;
+            /* height: 544px; */
+            width: 30%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            box-shadow: 4px 4px 4px 4px black;
+        }
+        
+        .imgtop{
+            width: 150px;
+            height: 150px;
+        }
+        /* 
+        .cardss{
+            flex-direction: column;
+        } */
+        
+        .cardss{
+            display: flex;
+        }
+        .cardx{
+            display: flex;
+            flex-direction: column;
+            margin: 70px 23px;
+            padding: 23px 12px;
+            width: 30%;
+            border: 1px solid black;
+            box-shadow: 4px 4px 4px 4px black;
+            background-color: rgb(163, 151, 132);
+            flex-wrap: nowrap;
+        }
+        .cardy {
+            
+            margin: 5px;
+            margin-top: 20px;
+            padding: 15px;
+            width: 250px;
+    border: 1px solid #ccc;
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 50px;
+
+  }
+  .logo{
+    border-radius: 10px;
+    height: 40px;
+    margin-left: 15px;
+  }
+ 
+.stick{
+    position: sticky;
+    top: 0%;
+}
+.header{
+    
+            background: url(landing\ image.jpg);
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        
+}
+.bottom-container{
+    /* background-color: #66BFBF; */
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    
+    /* justify-content: center; */
+    
+    color:#EAF6F6 ;
+    background-color: rgb(33, 31, 31);
+    width: 100%;
+    
+    
+}
+.endline{
+   
+    text-align: center;
+    margin: 0 auto;
+   
+}
+
+    </style>
+
+</head>
+<body>
+     <!-- NAVIGATION STARTS  -->
+     <header>
+
+         <div class="stick">
+             
+             <nav class ="navbar navbar-expand-lg bg-dark">
+                 <!-- <a class="navbar-brand" href="#"> <i class="bi bi-person-circle fs-2 ps-2 text-warning"></i></a> -->
+                 <img src="logo.png" class="logo" alt="user">
+                 <!-- <div class =" justify-content-between"> -->
+                     <ul class ="navbar-nav">
+                         <li class = "nav-item"><a class=" nav-link text-decoration-none text-light btn btn-warning fw-bold px-3" href="#" style="margin-left: 15px;">login</a></li>
+                         <li class = "nav-item"><a class=" nav-link text-decoration-none text-light btn btn-warning fw-bold px-3" href="#" style="margin-left: 10px;">Sign up</a></li>
+                         <!-- <li class = "nav-item dropdown"><a class="dropdown-toggle nav-link text-decoration-none text-light btn btn-warning fw-bold px-3" data-bs-toggle="dropdown" href="#">Projects</a>
+                    <div class ="dropdown-menu">
+                        <a class = "dropdown-item" href="#">cardiology</a>
+                        <a class = "dropdown-item" href="#">zoology</a>
+                        <a class = "dropdown-item" href="#">nhi btauga</a>
+                        <a class = "dropdown-item" href="#">etna bhoot nhi h kya</a>
+                    </div> -->
+                    
+                    <!-- </li>
+                        <li class = "nav-item"><a class=" nav-link text-decoration-none text-light btn btn-warning fw-bold px-3" href="#">Contact Me</a></li> -->
+                    </ul>
+                    <form>
+            <div class="input-group align-self-end">
+                <input type = "text" placeholder="search" class="form-control">
+                <button type = "button" class="btn btn-warning"><i class="bi bi-search"></i></button>
+            </div>
+        </form>
+        <!-- </div> -->
+    </nav>
+</div>
+</header>
+
+
+
+    
+<!-- NAVIGATION ENDS -->
+   
+
+<!-- <section class="back" style="background: url(landing\ image.jpg);  z-index: -1;"> -->
+
+    <div class="cardy" onmouseover="showAuthor()" onmouseout="hideAuthor()">
+        <img src="book1.jpg" alt="Book 1">
+        <p id="author" style="display: none;">Author Name: John Doe</p>
+    </div>
+    <div class="cardy" onmouseover="showAuthor1()" onmouseout="hideAuthor1()">
+        <img src="book2.jpg" alt="Book 2">
+        <p id="author1" style="display: none;">Author Name: John Doe</p>
+</div>
+<div class="cardy" onmouseover="showAuthor2()" onmouseout="hideAuthor2()">
+    <img src="book3.jpg" alt="Book 3">
+    <p id="author2" style="display: none;">Author Name: John Doe</p>
+</div>
+<div class="cardy" onmouseover="showAuthor3()" onmouseout="hideAuthor3()">
+    <img src="book4.jpg" alt="Book 4">
+    <p id="author3" style="display: none;">Author Name: John Doe</p>
+</div>
+<!-- <div class="bottomcotainer">
+    <p class="endline">© BOOKSHALA</p>
+</div> -->
+
+<div class="cardy" onmouseover="showAuthor()" onmouseout="hideAuthor()">
+    <img src="book5.jpg" alt="Book 5">
+    <p id="author" style="display: none;">Author Name: John Doe</p>
+</div>
+<div class="cardy" onmouseover="showAuthor1()" onmouseout="hideAuthor1()">
+    <img src="book6.jpg" alt="Book 6">
+    <p id="author1" style="display: none;">Author Name: John Doe</p>
+</div>
+<div class="cardy" onmouseover="showAuthor2()" onmouseout="hideAuthor2()">
+    <img src="book7.jpg" alt="Book 7">
+    <p id="author2" style="display: none;">Author Name: John Doe</p>
+</div>
+<div class="cardy" onmouseover="showAuthor3()" onmouseout="hideAuthor3()">
+    <img src="book8.jpg" alt="Book 8">
+    <p id="author3" style="display: none;">Author Name: John Doe</p>
+</div>
+<!-- <div class="bottomcotainer">
+    <p class="endline">© BOOKSHALA</p> -->
+</div>
+<div class="cardy" onmouseover="showAuthor()" onmouseout="hideAuthor()">
+    <img src="book9.jpg" alt="Book 9">
+    <p id="author" style="display: none;">Author Name: John Doe</p>
+</div>
+<div class="cardy" onmouseover="showAuthor1()" onmouseout="hideAuthor1()">
+    <img src="book2.jpg" alt="Book 2">
+    <p id="author1" style="display: none;">Author Name: John Doe</p>
+</div>
+<div class="cardy" onmouseover="showAuthor2()" onmouseout="hideAuthor2()">
+    <img src="book3.jpg" alt="Book 3">
+    <p id="author2" style="display: none;">Author Name: John Doe</p>
+</div>
+<div class="cardy" onmouseover="showAuthor3()" onmouseout="hideAuthor3()">
+    <img src="book4.jpg" alt="Book 4">
+    <p id="author3" style="display: none;">Author Name: John Doe</p>
+</div>
+<!-- <div class="bottomcotainer">
+    <p class="endline">© BOOKSHALA</p> -->
+</div>
+<div class="cardy" onmouseover="showAuthor()" onmouseout="hideAuthor()">
+    <img src="book1.jpg" alt="Book 1">
+    <p id="author" style="display: none;">Author Name: John Doe</p>
+</div>
+<div class="cardy" onmouseover="showAuthor1()" onmouseout="hideAuthor1()">
+    <img src="book2.jpg" alt="Book 2">
+    <p id="author1" style="display: none;">Author Name: John Doe</p>
+</div>
+<div class="cardy" onmouseover="showAuthor2()" onmouseout="hideAuthor2()">
+    <img src="book3.jpg" alt="Book 3">
+    <p id="author2" style="display: none;">Author Name: John Doe</p>
+</div>
+<div class="cardy" onmouseover="showAuthor3()" onmouseout="hideAuthor3()">
+    <img src="book4.jpg" alt="Book 4">
+    <p id="author3" style="display: none;">Author Name: John Doe</p>
+</div>
+<!-- </section> -->
+<!-- <hr style="border: 3px solid black; z-index: 1; bottom: 40; position: fixed;"> -->
+<div class="bottom-container">
+    
+   <p class="endline"> © BOOKSHALA</p>
+  </div>
+  
+<script>
+    function showAuthor() {
+        document.getElementById("author").style.display = "block";
+    }
+    
+    function hideAuthor() {
+        document.getElementById("author").style.display = "none";
+    }
+    function showAuthor1() {
+        document.getElementById("author1").style.display = "block";
+    }
+
+    function hideAuthor1() {
+        document.getElementById("author1").style.display = "none";
+    }
+    function showAuthor2() {
+        document.getElementById("author2").style.display = "block";
+    }
+
+    function hideAuthor2() {
+        document.getElementById("author2").style.display = "none";
+    }
+    function showAuthor3() {
+        document.getElementById("author3").style.display = "block";
+    }
+
+    function hideAuthor3() {
+        document.getElementById("author3").style.display = "none";
+    }
+
+
+
+</script>
+
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
